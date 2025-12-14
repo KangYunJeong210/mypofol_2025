@@ -59,12 +59,7 @@ button {
     content: "";
     position: absolute;
     inset: -80px;
-    background:
-        radial-gradient(900px 600px at 55% 30%, rgba(255, 255, 255, .85), rgba(255, 255, 255, 0) 55%),
-        radial-gradient(700px 480px at 25% 20%, rgba(156, 214, 255, .75), rgba(0, 0, 0, 0) 55%),
-        radial-gradient(760px 520px at 75% 40%, rgba(255, 171, 210, .75), rgba(0, 0, 0, 0) 60%),
-        radial-gradient(900px 620px at 65% 70%, rgba(255, 131, 103, .75), rgba(0, 0, 0, 0) 60%),
-        linear-gradient(120deg, rgba(255, 100, 80, .55), rgba(130, 200, 255, .4), rgba(255, 170, 210, .45));
+           background: url(./img/bg.png);
     filter: blur(18px) saturate(115%);
     transform: scale(1.06);
     opacity: .95;
@@ -899,4 +894,5 @@ button {
 
 .hero-water {
     pointer-events: none;
+
 }
