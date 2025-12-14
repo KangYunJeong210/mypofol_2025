@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yun Jeong | Web Designer Portfolio</title>
+    <meta name="description" content="보여지는 디자인이 아닌, 경험이 되는 디자인" />
+    <meta property="og:title" content="Yun Jeong | Portfolio" />
+    <meta property="og:description" content="보여지는 디자인이 아닌, 경험이 되는 디자인" />
+
+    <!-- Pretendard -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div id="page">
+
+        <!-- ===================== TOP BAR ===================== -->
+        <header class="topbar">
+            <div class="container topbar-inner">
+                <a class="brand" href="#home" aria-label="Go Home">
+                    <span class="dot"></span>
+                    <span> YunJeong's Portfolio</span>
+                </a>
+
+                <!-- desktop nav -->
+                <nav class="nav" aria-label="Primary">
+                    <a href="#home" class="active">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </nav>
+
+                <!-- mobile hamburger -->
+                <button id="menuBtn" class="menu-btn" aria-label="Open menu" aria-controls="mobilePanel"
+                    aria-expanded="false">
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- mobile panel -->
+            <div id="mobilePanel" class="mobile-panel" aria-label="Mobile Menu">
+                <div class="container">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===================== HERO ===================== -->
+        <section id="home" class="hero">
+            <canvas class="hero-water" aria-hidden="true"></canvas>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="kicker">WEB DESIGNER</div>
+                    <h1 class="hero-title">보여지는 디자인이 아닌<br />경험이 되는 디자인</h1>
+                    <p class="hero-desc">
+                        꾸준히 배우며 앞으로 나아가는 디자이너 강윤정입니다
+                    </p>
+
+                    <div class="social-row" aria-label="Social links">
+                        <div style="opacity:.75; margin-top:6px;"><img src="./img/tit_img.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="hero-side">
+                    <!-- <div>WEB Designer</div> -->
+                    <!-- <div style="opacity:.75; margin-top:6px;"><img src="./img/tit_img.png" alt=""></div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT + EXPERIENCE (2 cards) ===================== -->
+        <section class="section">
+            <div class="container grid-2">
+
+                <!-- About -->
+                <article id="about" class="glass card-pad">
+                    <div class="about-head">
+
+                        <div>
+                            <h2 class="card-title">About Me</h2>
+                            <p class="card-sub">보여지는 디자인이 아닌 경험이 되는 디자인</p>
+                        </div>
+                        <div class="avatar" aria-hidden="true"><img src="./img/pro.png" alt=""></div>
+                    </div>
+
+                    <p class="about-text">
+                        컬러와 타이포그래피, 여백을 섬세하게 다루며
+                        자연스럽게 읽히는 흐름과 안정적인 레이아웃을 고민합니다.
+                        <br>
+                        기획과 개발 단계까지 고려한 디자인을 지향하며,
+                        작은 인터랙션과 모션에도 브랜드의 성격을 담습니다.
+                    </p>
+
+                    <div class="meta">
+                        <div><img src="./img/name_ic.png" alt=""> 강윤정 • Kang Yun Jeong</div>
+                        <div><img src="./img/call_ic.png" alt=""> Web • UI Designer</div>
+                        <div><img src="./img/main_ic.png" alt=""> yunjung0002@gmail.com</div>
+                    </div>
+                </article>
+
+                <!-- Experience -->
+                <article id="experience" class="glass card-pad">
+                    <h2 class="card-title">Experience</h2>
+                    <p class="card-sub">프로젝트 / 업무 경험</p>
+
+                    <ul class="exp-list">
+                        <li class="exp-item">
+                            <div class="exp-date">2024.09 ~ 2025.08
+                            </div>
+                            <div class="exp-main">
+                                <div class="exp-role">웹 에이전시 (주)디몬스터 UI/UX 디자인팀 선임 디자이너</div>
+                                <div class="exp-desc">다수 프로젝트 메인 디자이너 담당</div>
+                            </div>
+                        </li>
+
+                        <li class="exp-item">
+                            <div class="exp-date">2024.01 ~ 2024.08
+                            </div>
+                            <div class="exp-main">
+                                <div class="exp-role">프리랜서 편집 디자이너</div>
+                                <div class="exp-desc">다수 편집 인쇄물 표지 및 내지 디자인</div>
+                            </div>
+                        </li>
+
+                        <li class="exp-item">
+                            <div class="exp-date">2022.11 ~ 2023.12
+                            </div>
+                            <div class="exp-main">
+                                <div class="exp-role">웹 에이전시 (주)소프트기획 서비스 1팀 디자이너</div>
+                                <div class="exp-desc">자사 서비스 UX 기획 및 UI/UX 디자인 및 퍼블리싱</div>
+                            </div>
+                        </li>
+
+                        <li class="exp-item">
+                            <div class="exp-date">2022.07 ~2022.11
+                            </div>
+                            <div class="exp-main">
+                                <div class="exp-role">나래디자인학원 웹디자인 및 UI/UX 과정 수료</div>
+                                <div class="exp-desc">Photoshop, Illustrator / Html&Css,
+                                    Javascript 수강</div>
+                            </div>
+                        </li>
+
+                        <li class="exp-item">
+                            <div class="exp-date">2017.03 ~2022.02
+                            </div>
+                            <div class="exp-main">
+                                <div class="exp-role">동아대학교 산업경영공학과 졸업</div>
+                                <div class="exp-desc"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+
+            <!-- ===================== PORTFOLIO ===================== -->
+            <div class="container" style="margin-top:46px;">
+                <div class="section-head">
+                    <div>
+                        <h2 id="portfolio" class="section-title">Portfolio</h2>
+                        <div style="font-size:18px; opacity:.72; margin-top:6px;">
+                            탭으로 카테고리를 선택할 수 있습니다.
+                        </div>
+                    </div>
+
+                    <div class="tabs" aria-label="Portfolio tabs">
+                        <!-- <button class="tab active" data-tab="all" type="button">ALL</button> -->
+                        <button class="tab active" data-tab="uiux" type="button">UI/UX</button>
+                        <button class="tab" data-tab="web" type="button">WEB</button>
+                        <button class="tab" data-tab="content" type="button">CONTENT</button>
+                        <button class="tab" data-tab="all" type="button">ALL</button>
+                    </div>
+                </div>
+
+                <div class="port-grid">
+
+                    <!-- ui/ux -->
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work1.png">
+                        <div class="thumb">
+                            <img src="./img/work1.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">APP</span>
+                            <h3 class="port-title">입시정보 공유 플랫폼 어플 맘시크릿</h3>
+                            <p class="port-desc">기획 50%, 디자인 100%, 퍼블리싱 100%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="location.href='./portfolio1.html'">상세보기</button>
+                                <button class="tag" onclick="window.open('https://lemonbrain.co.kr/src/main/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work2.png">
+                        <div class="thumb">
+                            <img src="./img/work2.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">APP</span>
+                            <h3 class="port-title">묻고 답하기 어플리케이션 With Q</h3>
+                            <p class="port-desc">UI 디자인 100%, 퍼블리싱 80%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="location.href='./portfolio2.html'">상세보기</button>
+                                <button class="tag"
+                                    onclick="window.open('https://play.google.com/store/apps/details?id=com.dmonster.withq&hl=ko')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work4.png">
+                        <div class="thumb">
+                            <img src="./img/work4.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">APP</span>
+                            <h3 class="port-title">인플루언서들의 쇼핑몰 페이지 셀러바이</h3>
+                            <p class="port-desc">디자인 100%, 퍼블리싱 100%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="location.href='./portfolio3.html'">상세보기</button>
+                                <button class="tag" onclick="window.open('https://sellerby.co.kr/src/seller/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work3.png">
+                        <div class="thumb">
+                            <img src="./img/work3.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">Mobile • Web</span>
+                            <h3 class="port-title">반려인의 편안한 휴식, 반려견 호텔링</h3>
+                            <p class="port-desc">디자인 100%, 퍼블리싱 100%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="location.href='./portfolio5.html'">상세보기</button>
+                                <button class="tag" onclick="window.open('https://petcance.dmonster.kr/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work6.png">
+                        <div class="thumb">
+                            <img src="./img/work6.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">Mobile • Web</span>
+                            <h3 class="port-title">제주도의 모든 정보를 알 수 있는, 아이탐라</h3>
+                            <p class="port-desc">디자인 100%, 퍼블리싱 100%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="location.href='./portfolio4.html'">상세보기</button>
+                                <button class="tag" onclick="window.open('https://itamra.net/')">사이트로 이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work8.png">
+                        <div class="thumb">
+                            <img src="./img/work8.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">Mobile • Web</span>
+                            <h3 class="port-title">신재생 에너지 기업, 에코폴리머</h3>
+                            <p class="port-desc">디자인 100%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://ecopolymer.dmonster.kr/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work7.png">
+                        <div class="thumb">
+                            <img src="./img/work7.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">Mobile • Web</span>
+                            <h3 class="port-title">장례의 모든 것, 장모</h3>
+                            <p class="port-desc">퍼블리싱 80%</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://xn--v52bn1v.com/src/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="port-item" data-category="uiux" data-title="Landing Page Design"
+                        data-full="./img/work10.png">
+                        <div class="thumb">
+                            <img src="./img/work10.png" alt="Landing Page Design thumbnail" />
+                        </div>
+                        <div class="port-body">
+                            <span class="badge">Mobile • Web</span>
+                            <h3 class="port-title">커리어의 새로운 시작, 커리어리셋</h3>
+                            <p class="port-desc">서브 디자인</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://myapply.dmonster.kr/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- web -->
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(1).jpg">
+                        <div class="thumb"><img src="./img/site(1).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">제이비 디자인 호텔</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dkbc0163.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(2).jpg">
+                        <div class="thumb"><img src="./img/site(2).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">(주)BHI건설</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dbcom14.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(3).jpg">
+                        <div class="thumb"><img src="./img/site(3).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">(주)대덕화학</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dbcom23.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(4).jpg">
+                        <div class="thumb"><img src="./img/site(6).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">(주)인성종합관리</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dplanv0045.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(5).jpg">
+                        <div class="thumb"><img src="./img/site(5).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">P&W 인터내셔널</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dplanv0044.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(6).jpg">
+                        <div class="thumb"><img src="./img/site(4).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">강산가구</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dkbc0141.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(7).jpg">
+                        <div class="thumb"><img src="./img/site(7).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">(주)해청</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dbcom47.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(8).jpg">
+                        <div class="thumb"><img src="./img/site(8).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">기린정밀공업</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dbcom53.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(9).jpg">
+                        <div class="thumb"><img src="./img/site(9).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">수도산업기계</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dbcom12.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(10).jpg">
+                        <div class="thumb"><img src="./img/site(10).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">부산숨비</h3>
+                            <p class="port-desc">사이트 제작 및 관리 보수</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dplanv0049.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(11).jpg">
+                        <div class="thumb"><img src="./img/site(11).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">디몬건설</h3>
+                            <p class="port-desc">카페 24 템플릿 제작</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://dmonster0424.mycafe24.com/')">사이트로
+                                    이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(12).jpg">
+                        <div class="thumb"><img src="./img/site(12).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">천마상사</h3>
+                            <p class="port-desc">카페 24 작업 사이트</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('https://soombi.busan.com/')">사이트로 이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="web" data-title="Promo Banner"
+                        data-full="./img/site(13).jpg">
+                        <div class="thumb"><img src="./img/site(13).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB</span>
+                            <h3 class="port-title">한국해양디자인협회</h3>
+                            <p class="port-desc">사이트 제작 및 관리 보수</p>
+                            <div class="tags">
+                                <button class="tag" onclick="window.open('http://marinedesign.or.kr/')">사이트로 이동</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+
+
+                    <!-- content -->
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(2).png">
+                        <div class="thumb"><img src="./img/con(2).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Poster Design</span>
+                            <h3 class="port-title">IOT 제어 딥러닝 비전 교육 과정 포스터</h3>
+                            <p class="port-desc">정부 지원 교육과정 포스터 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail1">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(1).png">
+                        <div class="thumb"><img src="./img/con(1).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">AD design</span>
+                            <h3 class="port-title">소프트 기획 원격 매장 관리 시스템 광고</h3>
+                            <p class="port-desc">자사 시스템 내지 광고</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail2">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(3).png">
+                        <div class="thumb"><img src="./img/con(3).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Poster design</span>
+                            <h3 class="port-title">IOT와 임베디드 시스템 기초 과정 포스터</h3>
+                            <p class="port-desc">정부 지원 교육과정 포스터 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail3">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(4).png">
+                        <div class="thumb"><img src="./img/con(4).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Design</span>
+                            <h3 class="port-title">LUFF BUT 레스토랑 편집 디자인</h3>
+                            <p class="port-desc">자사 협업 식당 디자인 매체 작업</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail4">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(5).png">
+                        <div class="thumb"><img src="./img/con(5).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Business card design</span>
+                            <h3 class="port-title">동경밥상 명함 디자인</h3>
+                            <p class="port-desc">자사 협업 식당 명함 작업</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail5">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(6).png">
+                        <div class="thumb"><img src="./img/con(6).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Logo • Business card design</span>
+                            <h3 class="port-title">아이티하지 로고 • 명함 디자인</h3>
+                            <p class="port-desc">자사 서비스팀 명함 작업</p>
+                            <div class="tags  js-detail-open" data-target="detail6">
+                                <button class="tag">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(7).png">
+                        <div class="thumb"><img src="./img/con(7).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Logo • Poster design</span>
+                            <h3 class="port-title">너를 담다 포스터 디자인</h3>
+                            <p class="port-desc">자사 협업 카페 포스터 및 로고 작업</p>
+                            <div class="tags">
+                                <button class="tag  js-detail-open" data-target="detail7">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(8).png">
+                        <div class="thumb"><img src="./img/con(8).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">System Design</span>
+                            <h3 class="port-title">스스시 키오스크 시스템 메인 화면 디자인</h3>
+                            <p class="port-desc">자사 시스템 메인 화면 디자인</p>
+                            <div class="tags">
+                                <button class="tag  js-detail-open" data-target="detail8">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(9).png">
+                        <div class="thumb"><img src="./img/con(9).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB • PDP Design</span>
+                            <h3 class="port-title">우리들 핑거푸드 개인 작업물</h3>
+                            <p class="port-desc">웹화면, 상세 페이지, 광고 배너 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail9">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(10).png">
+                        <div class="thumb"><img src="./img/con(10).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">WEB • PDP Design</span>
+                            <h3 class="port-title">세라 업 에센셜 앰플 개인 작업물</h3>
+                            <p class="port-desc">상세 페이지, 광고 배너 디자인</p>
+                            <div class="tags">
+                                <button class="tag  js-detail-open" data-target="detail10">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(11).png">
+                        <div class="thumb"><img src="./img/con(11).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">AD Design</span>
+                            <h3 class="port-title">의류 브랜드 광고 개인 작업물</h3>
+                            <p class="port-desc">배너 디자인</p>
+                            <div class="tags">
+                                <button class="tag  js-detail-open" data-target="detail11">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(12).png">
+                        <div class="thumb"><img src="./img/con(12).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Book design</span>
+                            <h3 class="port-title">개인 출판물 앤트밀</h3>
+                            <p class="port-desc">표지 및 내지 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail12">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(13).png">
+                        <div class="thumb"><img src="./img/con(13).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Book design</span>
+                            <h3 class="port-title">개인 출판물 My first Girlfreind</h3>
+                            <p class="port-desc">표지 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail13">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(14).png">
+                        <div class="thumb"><img src="./img/con(14).png" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Book design</span>
+                            <h3 class="port-title">개인 출판물 Snow glass</h3>
+                            <p class="port-desc">표지 및 내지 디자인</p>
+                            <div class="tags">
+                                <button class="tag js-detail-open" data-target="detail14">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="content" data-title="Promo Banner"
+                        data-full="./img/con(14).png">
+                        <div class="thumb"><img src="./img/con(15).jpg" alt="Promo Banner thumbnail" /></div>
+                        <div class="port-body">
+                            <span class="badge">Book design</span>
+                            <h3 class="port-title">그 외 표지 디자인 모음</h3>
+                            <p class="port-desc">표지 및 내지 디자인</p>
+                            <div class="tags">
+                                <button class="tag  js-detail-open" data-target="detail15">상세보기</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+
+
+                </div>
+
+                <div class="more-wrap">
+                    <button id="moreBtn" class="more-btn" type="button">더보기</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FOOTER ===================== -->
+        <footer class="footer">
+            <div class="container">
+                © <span id="year"></span> Yun Jeong. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ===================== MODAL ===================== -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Project preview">
+        <div class="modal-card">
+            <div class="modal-top">
+                <b id="modalTitle">Preview</b>
+                <button id="modalClose" class="modal-close" type="button" aria-label="Close">✕</button>
+            </div>
+            <img id="modalImg" class="modal-img" src="" alt="" />
+        </div>
+    </div>
+
+
+    <!-- ===================== TOP BUTTON ===================== -->
+    <button id="topBtn" class="top-btn" type="button" aria-label="Back to top">↑</button>
+
+    <div class="detail-overlay" data-modal="detail1" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con1.png" alt=""></p>
+        </div>
+    </div>
+
+
+    <div class="detail-overlay" data-modal="detail2" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con2.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail3" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con3.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail4" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con4.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail5" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con5.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail6" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con6.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail7" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con7.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail8" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con8.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail9" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con9.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail10" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con10.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail11" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con11.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail12" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con12.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail13" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con13.png" alt=""></p>
+        </div>
+    </div>
+
+    <div class="detail-overlay" data-modal="detail14" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con14.png" alt=""></p>
+        </div>
+    </div>
+
+
+    <div class="detail-overlay" data-modal="detail15" role="dialog" aria-modal="true">
+        <div class="detail-tab" tabindex="-1">
+            <button class="close-btn js-detail-close" type="button" aria-label="Close">✕</button>
+            <p><img src="./img/con15.png" alt=""></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src=" ./script.js"></script>
+    <script>
+        // footer year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const overlay = document.getElementById("detailOverlay");
+            const openBtn = document.querySelector(".js-detail-open");
+            const closeBtn = document.querySelector(".js-detail-close");
+
+            if (!overlay || !openBtn || !closeBtn) {
+                console.log("❌ 요소를 못 찾음", { overlay, openBtn, closeBtn });
+                return;
+            }
+
+            openBtn.addEventListener("click", () => {
+                overlay.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                overlay.classList.remove("active");
+            });
+
+            overlay.addEventListener("click", (e) => {
+                if (e.target === overlay) overlay.classList.remove("active");
+            });
+
+            window.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") overlay.classList.remove("active");
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const body = document.body;
+            let activeOverlay = null;
+
+            const open = (overlay) => {
+                if (!overlay) return;
+                overlay.classList.add("active");
+                body.style.overflow = "hidden";
+                activeOverlay = overlay;
+
+                // 포커스 이동(접근성 + ESC 대응 안정)
+                const tab = overlay.querySelector(".detail-tab");
+                if (tab) tab.focus();
+            };
+
+            const close = () => {
+                if (!activeOverlay) return;
+                activeOverlay.classList.remove("active");
+                body.style.overflow = "";
+                activeOverlay = null;
+            };
+
+            // ✅ 버튼 클릭(여러 개)
+            document.addEventListener("click", (e) => {
+                const openBtn = e.target.closest(".js-detail-open");
+                if (openBtn) {
+                    const key = openBtn.dataset.target;
+                    const overlay = document.querySelector(`.detail-overlay[data-modal="${key}"]`);
+                    open(overlay);
+                    return;
+                }
+
+                const closeBtn = e.target.closest(".js-detail-close");
+                if (closeBtn) {
+                    close();
+                    return;
+                }
+
+                // ✅ 오버레이 바깥 클릭 닫기
+                const overlay = e.target.classList.contains("detail-overlay") ? e.target : null;
+                if (overlay && overlay.classList.contains("active")) {
+                    close();
+                }
+            });
+
+            // ✅ ESC 닫기
+            window.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") close();
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hero = document.querySelector("#home.hero");
+            const canvas = hero?.querySelector(".hero-water");
+            if (!hero || !canvas) return;
+
+            const IMG_URL = "./img/bg.png"; // 🔥 배경 이미지 경로
+
+            const ctx = canvas.getContext("2d");
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+            const base = document.createElement("canvas");
+            const btx = base.getContext("2d");
+
+            const img = new Image();
+            img.src = IMG_URL;
+
+            let w = 0, h = 0;
+
+            /* ================= 끌림 튜닝 ================= */
+            const lensR = 560;          // ⭐ 영향 반경 (크게!)
+            const tile = 16;            // 타일 크기
+            const pullStrengthIdle = 0.78; // ⭐ 기본 흐름 끌림
+            const pullStrengthHover = 0.9;// ⭐ 마우스 끌림
+            const pullMax = 42;
+
+            let mouse = { x: 0, y: 0, on: false };
+
+            /* ===== 자동 흐름용 중심점 ===== */
+            let autoCenter = { x: 0, y: 0 };
+            const startTime = performance.now();
+
+            function resize() {
+                const r = hero.getBoundingClientRect();
+                w = Math.max(2, Math.floor(r.width));
+                h = Math.max(2, Math.floor(r.height));
+
+                canvas.width = Math.floor(w * dpr);
+                canvas.height = Math.floor(h * dpr);
+                canvas.style.width = w + "px";
+                canvas.style.height = h + "px";
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+                base.width = w;
+                base.height = h;
+                btx.setTransform(1, 0, 0, 1, 0, 0);
+
+                if (img.complete && img.naturalWidth) drawBase();
+            }
+
+            function drawBase() {
+                const iw = img.naturalWidth, ih = img.naturalHeight;
+                const s = Math.max(w / iw, h / ih);
+                const dw = iw * s, dh = ih * s;
+                const dx = (w - dw) / 2;
+                const dy = (h - dh) / 2;
+
+                btx.clearRect(0, 0, w, h);
+                btx.imageSmoothingEnabled = true;
+                btx.imageSmoothingQuality = "high";
+                btx.drawImage(img, dx, dy, dw, dh);
+            }
+
+            function render(t) {
+                if (!img.complete) {
+                    requestAnimationFrame(render);
+                    return;
+                }
+
+                ctx.clearRect(0, 0, w, h);
+                ctx.drawImage(base, 0, 0);
+
+                /* ===== 자동 흐름 중심점 계산 ===== */
+                const tt = (t - startTime) * 0.00022;   // 조금 더 느리게
+                autoCenter.x = w * (0.5 + Math.sin(tt) * 0.32); // 0.22 → 0.32
+                autoCenter.y = h * (0.5 + Math.cos(tt * 0.85) * 0.32);
+                const cx = mouse.on ? mouse.x : autoCenter.x;
+                const cy = mouse.on ? mouse.y : autoCenter.y;
+
+                const pullStrength = mouse.on ? pullStrengthHover : pullStrengthIdle;
+
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(cx, cy, lensR, 0, Math.PI * 2);
+                ctx.clip();
+
+                for (let y = 0; y < h; y += tile) {
+                    const yy = Math.min(h - tile, y);
+                    for (let x = 0; x < w; x += tile) {
+                        const xx = Math.min(w - tile, x);
+
+                        const tx = xx + tile * 0.5;
+                        const ty = yy + tile * 0.5;
+
+                        const dx = tx - cx;
+                        const dy = ty - cy;
+                        const dist = Math.hypot(dx, dy);
+                        if (dist > lensR) continue;
+
+                        const fall = 1 - dist / lensR;
+                        const ease = fall * fall;
+
+                        // 거리 정규화 (0~1)
+                        const nd = Math.max(0.001, dist / lensR);
+
+                        // ⭐ 중심에 가까울수록 급격히 빨려들게 (가속 커브)
+                        const accel = Math.pow(1 - nd, 2.8);   // ← 핵심! (2.5~3.2 추천)
+
+                        // 최종 끌림
+                        let ox = (-dx) * pullStrength * accel;
+                        let oy = (-dy) * pullStrength * accel;
+
+                        ox = Math.max(-pullMax, Math.min(pullMax, ox));
+                        oy = Math.max(-pullMax, Math.min(pullMax, oy));
+
+                        ctx.drawImage(
+                            base,
+                            xx, yy, tile, tile,
+                            xx + ox, yy + oy, tile, tile
+                        );
+                    }
+                }
+
+                ctx.restore();
+                requestAnimationFrame(render);
+            }
+
+            /* ===== 이벤트 ===== */
+            hero.addEventListener("pointermove", (e) => {
+                const r = hero.getBoundingClientRect();
+                mouse.x = e.clientX - r.left;
+                mouse.y = e.clientY - r.top;
+                mouse.on = true;
+            }, { passive: true });
+
+            hero.addEventListener("pointerleave", () => {
+                mouse.on = false;
+            });
+
+            window.addEventListener("resize", resize);
+
+            img.onload = () => {
+                resize();
+                drawBase();
+                requestAnimationFrame(render);
+            };
+
+            resize();
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
