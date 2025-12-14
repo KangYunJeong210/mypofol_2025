@@ -2,51 +2,65 @@
 const $ = (sel, parent = document) => parent.querySelector(sel);
 const $$ = (sel, parent = document) => [...parent.querySelectorAll(sel)];
 
-// ===== mobile menu =====
-const menuBtn = $("#menuBtn");
-const mobilePanel = $("#mobilePanel");
+document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menuBtn");
+    const mobilePanel = document.getElementById("mobilePanel");
 
-if (menuBtn && mobilePanel) {
-    menuBtn.addEventListener("click", () => {
-        mobilePanel.classList.toggle("open");
-    });
+    if (!menuBtn || !mobilePanel) return;
 
-    // 메뉴 눌렀을 때 닫기
-    $$("#mobilePanel a").forEach(a => {
-        a.addEventListener("click", () => mobilePanel.classList.remove("open"));
-    });
-}
+    // 햄버거 열고 닫기
+    const toggleMenu = () => {
+        const isOpen = mobilePanel.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+    };
 
-// ===== smooth scroll + active link =====
-const links = $$('.nav a, .mobile-panel a');
-
-links.forEach(a => {
-    a.addEventListener("click", (e) => {
-        const href = a.getAttribute("href");
-        if (!href || !href.startsWith("#")) return;
+    menuBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        const target = document.querySelector(href);
-        if (!target) return;
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        toggleMenu();
     });
+
+    // 모바일 메뉴 링크 누르면 닫기 + 스무스 스크롤
+    mobilePanel.querySelectorAll("a[href^='#']").forEach((a) => {
+        a.addEventListener("click", (e) => {
+            e.preventDefault();
+            const href = a.getAttribute("href");
+            const target = document.querySelector(href);
+            mobilePanel.classList.remove("open");
+            menuBtn.setAttribute("aria-expanded", "false");
+            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    });
+
+    // 데스크탑 네비 스무스 스크롤
+    document.querySelectorAll(".nav a[href^='#']").forEach((a) => {
+        a.addEventListener("click", (e) => {
+            e.preventDefault();
+            const href = a.getAttribute("href");
+            const target = document.querySelector(href);
+            if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    });
+
+    // active 처리
+    const sections = ["home", "about", "experience", "portfolio"]
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
+
+    const setActive = () => {
+        const y = window.scrollY + 90;
+        let current = "#home";
+        for (const sec of sections) {
+            if (sec.offsetTop <= y) current = "#" + sec.id;
+        }
+        document.querySelectorAll(".nav a").forEach((a) => {
+            a.classList.toggle("active", a.getAttribute("href") === current);
+        });
+    };
+
+    window.addEventListener("scroll", setActive);
+    setActive();
 });
 
-const sections = ["#home", "#about", "#experience", "#portfolio"]
-    .map(id => document.querySelector(id))
-    .filter(Boolean);
-
-const setActive = () => {
-    const y = window.scrollY + 90;
-    let current = "#home";
-
-    for (const sec of sections) {
-        if (sec.offsetTop <= y) current = "#" + sec.id;
-    }
-
-    $$('.nav a').forEach(a => a.classList.toggle("active", a.getAttribute("href") === current));
-};
-window.addEventListener("scroll", setActive);
-setActive();
 
 // ===== tabs + more =====
 const tabs = $$(".tab");
